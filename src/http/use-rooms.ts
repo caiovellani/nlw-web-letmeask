@@ -1,4 +1,4 @@
-import type { TGetRoomsAPIResponse } from '@/components/http/types/get-rooms-response'
+import type { TGetRoomsAPIResponse } from '@/http/types/get-rooms-response'
 import { useQuery } from '@tanstack/react-query'
 
 export function useRooms() {

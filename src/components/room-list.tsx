@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { dayjs } from '@/lib/dayjs'
-import { useRooms } from '@/components/http/use-rooms'
+import { useRooms } from '@/http/use-rooms'
 
 export function RoomList() {
   const { data, isLoading } = useRooms()
@@ -29,7 +29,7 @@ export function RoomList() {
         {data?.map((room) => {
           return (
             <Link
-              to={`/rooms/${room.id}`}
+              to={`/room/${room.id}`}
               key={room.id}
               className="flex items-center justify-between p-3 rounded-lg border hover:bg-accent/50"
             >

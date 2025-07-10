@@ -1,5 +1,5 @@
-import type { TCreateRoomRequest } from '@/components/http/types/create-room-request'
-import type { TCreateRoomResponse } from '@/components/http/types/create-room-response'
+import type { TCreateRoomRequest } from '@/http/types/create-room-request'
+import type { TCreateRoomResponse } from '@/http/types/create-room-response'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 
 export function useCreateRoom() {
