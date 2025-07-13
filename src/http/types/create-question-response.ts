@@ -1,3 +1,4 @@
 export type TCreateQuestionResponse = {
-  roomId: string
+  questionId: string
+  answer: string | null
 }
