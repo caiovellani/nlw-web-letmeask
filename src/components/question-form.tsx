@@ -30,11 +30,11 @@ const createQuestionSchema = z.object({
 
 type CreateQuestionFormData = z.infer<typeof createQuestionSchema>
 
-interface QuestionFormProps {
+interface IQuestionFormProps {
   roomId: string
 }
 
-export function QuestionForm({ roomId }: QuestionFormProps) {
+export function QuestionForm({ roomId }: IQuestionFormProps) {
   const { mutateAsync: createQuestion } = useCreateQuestions(roomId)
 
   const form = useForm<CreateQuestionFormData>({

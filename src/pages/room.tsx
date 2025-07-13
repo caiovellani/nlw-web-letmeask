@@ -4,12 +4,12 @@ import { Button } from '@/components/ui/button'
 import { QuestionForm } from '@/components/question-form'
 import { QuestionList } from '@/components/question-list'
 
-type RoomParams = {
+type TRoomParams = {
   roomId: string
 }
 
 export function Room() {
-  const params = useParams<RoomParams>()
+  const params = useParams<TRoomParams>()
 
   if (!params.roomId) {
     return <Navigate replace to="/" />
